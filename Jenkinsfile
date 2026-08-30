@@ -29,6 +29,11 @@ pipeline {
     post {
         always {
             junit '**/target/surefire-reports/*.xml'   // publishes TestNG/JUnit results in Jenkins UI
+        publishHTML(target: [
+            reportDir: 'test-output/ExtentReport',   // adjust to your actual output path
+            reportFiles: 'index.html',                // or whatever your report's entry file is named
+            reportName: 'Extent Report'
+        ])
         }
     }
 }
