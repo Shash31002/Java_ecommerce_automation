@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/Shash31002/CICD_automation.git'
+                git branch: 'main', url: 'https://github.com/Shash31002/CICD_auto.git'
             }
         }
 
