@@ -2,7 +2,7 @@
 <suite name="TestSuite">
     <test name="AutomationTests">
         <classes>
-            <class name="Prgrm"/>
+            <class name="com.automation.tests.LoginTest"/>
         </classes>
     </test>
 </suite>
